@@ -159,11 +159,41 @@ S = {
  ]),
 }
 
+# Gathering guide (Nov 22): timesaver.gg Forever Mining/Herbalism routes (Nov 9 data), rankedboost.com ranks,
+# warcraft.wiki.gg Forever skinning formula, leprestore.com (Mining Pick), skycoach.gg (Herbalism needs no tool).
+S['gathering_guide'] = ('dusk', [
+   ('GATHERING', 'PROFESSIONS', 'WHAT YOU NEED', [
+     ('Mining', None, 'A Mining Pick in your bags'),
+     ('Herbalism', None, 'No tool needed, just pick'),
+     ('Skinning', None, 'A Skinning Knife in your bags'),
+     ('Train up at the trainer', '75 / 150 / 225', 'Journeyman, Expert, Artisan')]),
+   ('MINING', 'ORE BY SKILL', 'WHERE TO MINE', [
+     ('Copper', '1', 'Westfall, Loch Modan / Durotar, Silverpine'),
+     ('Tin', '65', 'Wetlands, Duskwood, Loch Modan'),
+     ('Iron', '125', 'Arathi, Alterac, Stranglethorn'),
+     ('Mithril', '175', 'Badlands, The Hinterlands'),
+     ('Truesilver', '230', 'Badlands, The Hinterlands'),
+     ('Thorium', '245', 'Winterspring, Blasted Lands')]),
+   ('HERBALISM', 'HERBS BY SKILL', 'WHERE TO PICK', [
+     ('Peacebloom, Silverleaf', '1', 'Any starting zone'),
+     ('Mageroyal', '50', 'Westfall, Darkshore / The Barrens'),
+     ('Bruiseweed', '100', 'Stonetalon, Hillsbrad, Wetlands'),
+     ('Liferoot', '150', 'Stranglethorn, Wetlands, Arathi'),
+     ('Sungrass', '230', 'The Hinterlands, Feralas, Azshara'),
+     ('Dreamfoil', '270', 'Un\'Goro, Eastern Plaguelands')]),
+   ('SKINNING', 'SKILL NEEDED', 'BY BEAST LEVEL', [
+     ('Level 1-10 beasts', '1', 'Skin anything in starting zones'),
+     ('Level 20 beasts', '100', 'Levels 11-20: (level - 10) x 10'),
+     ('Level 21+ beasts', 'LVL x 5', 'A level 30 beast needs 150'),
+     ('Level 60 beasts', '300', 'Skin where you quest')]),
+])
+
 def build(name):
     style, P = S[name]; th = M.THEMES[style]; M._SHADOW[0] = th.get('shadow', True)
     pages = []
     for i, (t1, t2, label, rows) in enumerate(P):
-        cards = [G.row_card(th, a, r, sub=b, h=140) for a, r, b in rows]
+        hh = 140 if len(rows) <= 4 else 118
+        cards = [G.row_card(th, a, r, sub=b, h=hh) for a, r, b in rows]
         pages.append(G.page(th, (t1, t2), cards, i * 12.0, (i + 1) * 12.0, label=label, footer=None))
     out_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'shorts')
     return G.render(name, pages, style, out_dir, 12.0 * len(P))
