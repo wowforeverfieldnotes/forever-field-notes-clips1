@@ -186,6 +186,21 @@ S['gathering_guide'] = ('dusk', [
      ('Level 20 beasts', '100', 'Levels 11-20: (level - 10) x 10'),
      ('Level 21+ beasts', 'LVL x 5', 'A level 30 beast needs 150'),
      ('Level 60 beasts', '300', 'Skin where you quest')]),
+   # trainers teaching all ranks to 300: timesaver.gg (Mining, Herbalism), wow-professions.com (Skinning)
+   ('TRAINERS', 'ALLIANCE', 'ALL RANKS UP TO 300', [
+     ('Mining: Stormwind / Ironforge', None, 'Gelman Stonehand / Geofram Bouldertoe'),
+     ('Mining: Darkshore', None, 'Kurdram Stonehammer'),
+     ('Herbalism: Stormwind / Ironforge', None, 'Tel\'Athir / Reyna Stonebranch'),
+     ('Herbalism: Darnassus', None, 'Firodren Mooncaller'),
+     ('Skinning: Stormwind / Ironforge', None, 'Maris Granger / Balthus Stoneflayer'),
+     ('Skinning: Darnassus', None, 'Eladriel, Craftsmen\'s Terrace')]),
+   ('TRAINERS', 'HORDE', 'ALL RANKS UP TO 300', [
+     ('Mining: Orgrimmar', None, 'Makaru'),
+     ('Mining: Thunder Bluff / Undercity', None, 'Brek Stonehoof / Brom Killian'),
+     ('Herbalism: Orgrimmar', None, 'Jandi'),
+     ('Herbalism: Thunder Bluff / Undercity', None, 'Komin Winterhoof / Martha Alliestar'),
+     ('Skinning: Orgrimmar', None, 'Thuwd, The Drag'),
+     ('Skinning: Thunder Bluff / Undercity', None, 'Mooranta / Killian Hagey')]),
 ])
 
 def build(name):
