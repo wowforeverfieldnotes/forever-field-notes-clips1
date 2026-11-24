@@ -5,7 +5,9 @@ Music: reuses the audio track of the existing card-style render of the same Shor
 
 usage (from a spec):  render(name, pages, out_path, audio_from=None)
 """
-import os, subprocess, random
+import os, subprocess, random, sys, zlib
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import make_clip as M
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 W, H, FPS, PAGE = 1080, 1920, 30, 12.0
@@ -170,35 +172,36 @@ def _fade(lay, a):
     r, g, b, al = lay.split(); al = al.point(lambda v: int(v * a))
     return Image.merge('RGBA', (r, g, b, al))
 
-def render(name, pages, out_path, audio_from=None, objective='Follow Forever Field Notes for more WoW: Forever guides.'):
-    """pages: list of (page_name, label, rows)."""
+START, STEP, FADE = 0.5, 0.75, 0.35
+
+def render(name, pages, out_path, style='dusk', objective='Follow Forever Field Notes for more WoW: Forever guides.'):
+    """pages: list of (page_name, label, rows). Music + a whoosh on every line, timed to the reveals."""
     total = PAGE * len(pages); tmp = out_path[:-4] + '.tmp.mp4'
-    cmd = ['ffmpeg', '-loglevel', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f'{W}x{H}', '-r', str(FPS), '-i', '-']
-    if audio_from and os.path.exists(audio_from):
-        cmd += ['-i', audio_from, '-map', '0:v', '-map', '1:a', '-af', f'apad,afade=t=out:st={total-1.2}:d=1.2', '-c:a', 'aac', '-b:a', '160k']
-    else:
-        cmd += ['-f', 'lavfi', '-i', 'anullsrc=r=44100:cl=stereo', '-map', '0:v', '-map', '1:a', '-c:a', 'aac']
-    cmd += ['-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20', '-pix_fmt', 'yuv420p', '-movflags', '+faststart', '-t', str(total), tmp]
-    p = subprocess.Popen(cmd, stdin=subprocess.PIPE)
+    built = []
     for pi, (pname, label, rows) in enumerate(pages):
-        base = base_frame(pname)
-        layers = page_layers(label, rows, objective if pi == len(pages) - 1 else None)
-        start, step, fade = 0.5, 0.75, 0.35
-        prev = None
+        built.append((base_frame(pname), page_layers(label, rows, objective if pi == len(pages) - 1 else None)))
+    # sound lands as each line starts to appear
+    reveals = [pi * PAGE + START + li * STEP for pi, (_, L) in enumerate(built) for li in range(len(L))]
+    wav = M.make_audio(M.THEMES[style], total, reveals, zlib.crc32(name.encode()))
+    cmd = ['ffmpeg', '-loglevel', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f'{W}x{H}', '-r', str(FPS), '-i', '-',
+           '-i', wav, '-map', '0:v', '-map', '1:a', '-c:a', 'aac', '-b:a', '160k',
+           '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20', '-pix_fmt', 'yuv420p', '-movflags', '+faststart', '-t', str(total), tmp]
+    p = subprocess.Popen(cmd, stdin=subprocess.PIPE)
+    black = Image.new('RGBA', (W, H), (0, 0, 0, 255))
+    for pi, (base, layers) in enumerate(built):
         for fi in range(int(PAGE * FPS)):
             t = fi / FPS
             fr = base.copy()
             for li, (lay, pos) in enumerate(layers):
-                a = (t - (start + li * step)) / fade
+                a = (t - (START + li * STEP)) / FADE
                 if a <= 0: break
                 a = min(a, 1.0)
                 fr.alpha_composite(_fade(lay, a), (pos[0], int(pos[1] + (1 - a) * 14)))
-            if t > PAGE - 0.4 and pi < len(pages) - 1:     # quick fade to black between pages
-                k = (t - (PAGE - 0.4)) / 0.4
-                fr = Image.blend(fr, Image.new('RGBA', (W, H), (0, 0, 0, 255)), k * 0.6)
+            if t > PAGE - 0.4 and pi < len(built) - 1:
+                fr = Image.blend(fr, black, (t - (PAGE - 0.4)) / 0.4 * 0.6)
             if t < 0.3 and pi > 0:
-                fr = Image.blend(fr, Image.new('RGBA', (W, H), (0, 0, 0, 255)), (1 - t / 0.3) * 0.6)
+                fr = Image.blend(fr, black, (1 - t / 0.3) * 0.6)
             p.stdin.write(fr.convert('RGB').tobytes())
-    p.stdin.close(); p.wait()
+    p.stdin.close(); p.wait(); os.remove(wav)
     if p.returncode == 0: os.replace(tmp, out_path)
     return out_path

@@ -62,16 +62,17 @@ def build(name):
     out_dir = os.path.join(ROOT, 'shorts', 'quest'); os.makedirs(out_dir, exist_ok=True)
     if name in NEWS:
         pname, label, rows, obj = NEWS[name]
-        return Q.render(name, [(pname, label, rows)], os.path.join(out_dir, name + '.mp4'),
-                        audio_from=os.path.join(ROOT, name + '.mp4'), objective=obj)
+        import json
+        style = json.load(open(os.path.join(HERE, name + '.json'))).get('style', 'dusk')
+        return Q.render(name, [(pname, label, rows)], os.path.join(out_dir, name + '.mp4'), style=style, objective=obj)
     return _build_guide(name)
 
 def _build_guide(name):
-    _, P = B.S[name]
+    style, P = B.S[name]
     pages = [(page_name(t1, t2), label, rows) for t1, t2, label, rows in P]
     out_dir = os.path.join(ROOT, 'shorts', 'quest'); os.makedirs(out_dir, exist_ok=True)
     src = os.path.join(ROOT, 'shorts', name + ('_v2' if name == 'gathering_guide' else '') + '.mp4')
-    return Q.render(name, pages, os.path.join(out_dir, name + '.mp4'), audio_from=src)
+    return Q.render(name, pages, os.path.join(out_dir, name + '.mp4'), style=style)
 
 if __name__ == '__main__':
     for n in sys.argv[1:]: print(build(n))
