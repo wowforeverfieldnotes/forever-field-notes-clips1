@@ -1,5 +1,12 @@
 {
   "cutoff": "2026-11-23T18:15:00-07:00",
   "note": "Hotfix/update videos are only made for Blizzard WoW: Forever hotfix or patch-note entries published after the cutoff and not listed below.",
-  "seen": []
+  "seen": [
+    {
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-hotfixes-november-23-2026/2403040/15",
+      "entry": "November 23, 2026",
+      "published": "2026-11-24T02:06:52Z",
+      "video": "hotfix_2026_11_23"
+    }
+  ]
 }

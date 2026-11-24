@@ -1,0 +1,32 @@
+{"name": "hotfix_2026_11_23", "style": "frost",
+ "objective": "Full notes on the official Blizzard forums.",
+ "pages": [
+  ["Hotfixes: Nov 23", "Classes", [
+    ["Druid: Feralheart 4-piece", "Fixed", "4 Energy every 1 sec for 5 sec"],
+    ["Priest: Mind Vision", null, "No longer procs effects"],
+    ["Shadow: Dark Inspiration", "Fixed", "Right Spirit bonus from Mind Flay"],
+    ["Shadow: Chastise", "Fixed", "Usable in Shadowform again"]]],
+  ["Hotfixes: Nov 23", "Classes and Races", [
+    ["Destro: Intensity", "Fixed", "Now works on Incinerate"],
+    ["Warrior: Mortal Strike", null, "Can't be used without the talent"],
+    ["Wisp Form", "Fixed", "No longer applies to living players"]]],
+  ["Hotfixes: Nov 23", "Dungeons and Items", [
+    ["Uldaman: Obsidian Sentinel", "Fixed", "Drops loot as intended"],
+    ["Filcher's Cowl", null, "No level requirement anymore"]]],
+  ["Hotfixes: Nov 23", "Professions", [
+    ["Cooking: 6 clam foods", "Fixed", "Right Well Fed, now Stamina Food"],
+    ["Cooking: Murloc Fin Soup", "Buff", "Raised to the next food tier"],
+    ["Eng: Renewal Gifts", "Fixed", "Goblin + Gnome icons no longer broken"],
+    ["Eng: The Mortar: Reloaded", "Fixed", "Learned with Goblin Mortar"],
+    ["LW: Centaur Hoofwarmers", "Fixed", "Pattern can be learned again"]]],
+  ["Hotfixes: Nov 23", "Quests", [
+    ["Dunston Checks Out", "Fixed", "Dunston runs near the escort's end"],
+    ["For Further Study", null, "Now has rewards"],
+    ["Uncovering the Past", null, "Now gives Ironforge rep"],
+    ["Gleaning Our Future", null, "Now gives Ironforge rep"]]],
+  ["Hotfixes: Nov 23", "Spells", [
+    ["Weapon procs", "Fixed", "Some spells caused too many procs"],
+    ["World Buffs", "Fixed", "Kept on zone change, lost in raids"],
+    ["Fengus' Ferocity", "Nerf", "Gave 2x the intended Spell Power"],
+    ["Darkmoon Faire buffs", "Nerf", "Gave 2x the intended power"]]]
+ ]}
