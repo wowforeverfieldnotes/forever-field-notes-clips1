@@ -8,6 +8,7 @@ usage (from a spec):  render(name, pages, out_path, audio_from=None)
 import os, subprocess, random, sys, zlib
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import make_clip as M
+import piano as P
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 W, H, FPS, PAGE = 1080, 1920, 30, 12.0
@@ -222,7 +223,16 @@ def _fade(lay, a):
 
 START, STEP, FADE = 0.5, 0.75, 0.35
 
-def render(name, pages, out_path, style='dusk', objective='Follow Forever Field Notes for more WoW: Forever guides.', dense=False):
+OUTRO_PAGE = 'Forever Field Notes'
+OUTRO_HEAD = 'Support the Channel'
+OUTRO_ROWS = [
+    ('Like', None, 'If this helped, hit like. It helps more players find the channel.'),
+    ('Subscribe', None, 'Subscribe to support Forever Field Notes and get every new guide.'),
+    ('Turn on notifications', None, 'Tap the bell to keep up to date on all future World of Warcraft: Forever Field Notes.'),
+    ('Thank you!', None, 'See you in Azeroth.')]
+OUTRO_SECONDS = 9.0
+
+def render(name, pages, out_path, style='dusk', objective='Follow Forever Field Notes for more WoW: Forever guides.', dense=False, outro=True):
     """pages: list of (page_name, label, rows). dense=True: smaller text, wrapped explanations, page length set by reading time.
     Music + a whoosh on every line, timed to the reveals."""
     built = []
@@ -234,11 +244,14 @@ def render(name, pages, out_path, style='dusk', objective='Follow Forever Field 
         else:
             L = page_layers(label, rows, obj); dur = PAGE; step = STEP
         built.append((base_frame(pname), L, dur, step))
+    if outro:  # separate closing page: like, subscribe, notifications
+        L = page_layers_dense(OUTRO_HEAD, OUTRO_ROWS, None)
+        built.append((base_frame(OUTRO_PAGE), L, OUTRO_SECONDS, min(STEP, max(0.45, OUTRO_SECONDS * 0.22 / len(L)))))
     total = sum(b[2] for b in built); tmp = out_path[:-4] + '.tmp.mp4'
     starts, t0 = [], 0.0
     for b in built: starts.append(t0); t0 += b[2]
     reveals = [starts[pi] + START + li * b[3] for pi, b in enumerate(built) for li in range(len(b[1]))]
-    wav = M.make_audio(M.THEMES[style], total, reveals, zlib.crc32(name.encode()))
+    wav = P.make_audio(style, total, reveals, zlib.crc32(name.encode()))
     cmd = ['ffmpeg', '-loglevel', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f'{W}x{H}', '-r', str(FPS), '-i', '-',
            '-i', wav, '-map', '0:v', '-map', '1:a', '-c:a', 'aac', '-b:a', '160k',
            '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20', '-pix_fmt', 'yuv420p', '-movflags', '+faststart', '-t', str(total), tmp]
