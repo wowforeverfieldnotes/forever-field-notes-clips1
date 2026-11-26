@@ -1,0 +1,78 @@
+{"name": "hotfix_2026_11_25", "style": "ember",
+ "objective": "Full notes on the official Blizzard forums.",
+ "pages": [
+  ["Hotfixes: Nov 25", "Druid", [
+    ["Hurricane", "Fixed", "Final hit now lands"],
+    ["Balance: Starlight Wrath", "New", "Was Imp. Wrath; Starfire 0.1-0.5s faster"],
+    ["Balance: Moon and Stars", "New", "Was Imp. Moonfire; 50/100% no pushback"],
+    ["Improved Starfire", "2 pts", "8/15%; 3+ pts spent = talents reset"]]],
+  ["Hotfixes: Nov 25", "Druid", [
+    ["Eclipse", "+7/13/20%", "Wrath crit chance, at all times"],
+    ["Dreamstate", "New", "Replaces Moonfury: 20-100% Innervate"],
+    ["Moonkin Form", "+10%", "Arcane and Nature damage in form"],
+    ["Genesis", "Fixed", "Now boosts Hurricane and Tranquility"]]],
+  ["Hotfixes: Nov 25", "Hunter and Warlock", [
+    ["Hunter + Warlock pets", "Fixed", "Melee crit chance was 0%"],
+    ["BM: Summoned Hawks", null, "Attack summon target, even on Passive"],
+    ["Hawks: idle and dismiss", null, "Hit your target; Dismiss Pet removes"],
+    ["Hawks crit", "Fixed", "Had about 5% less crit than intended"],
+    ["Succubus and Incubus", "Fixed", "Had 5% more crit than intended"]]],
+  ["Hotfixes: Nov 25", "Paladin and Rogue", [
+    ["Paladin: Judgements", "Fixed", "Refresh from attacks below 20 sec"],
+    ["Paladin: Exorcism", "Fixed", "Can now crit"],
+    ["Holy: Oath of Light", "60 min", "Duration increased"],
+    ["Rogue Poisons + Blinding Powder", "BoP", "Temporary, while a bug is fixed"],
+    ["Rogue: Poised", "Fixed", "Removed by Sap/Distract from Stealth"]]],
+  ["Hotfixes: Nov 25", "Classes and Dungeons", [
+    ["Shaman: Chain Lightning", "Fixed", "Uses Clearcasting with 5 Maelstrom"],
+    ["Arms: Weaponmaster", "Fixed", "Reapplies after dying in Battlegrounds"],
+    ["BFD: Altar of the Deeps", "Fixed", "Usable after 3 sec, gives Blessing"],
+    ["Sunken Temple: Hakkar", "Fixed", "Avatar of Hakkar spawns again"]]],
+  ["Hotfixes: Nov 25", "World and Items", [
+    ["Desolace: Magram centaurs", "Faster", "Respawn faster"],
+    ["Duskwood: Lost Knight", "Fixed", "No longer spawns inside a tree"],
+    ["Riverglades: Clubtoe", "Fixed", "No longer flags you for PvP"],
+    ["Unerring Purpose", null, "Sells for more than 2 copper"],
+    ["Totem of the Storm", "Renamed", "Now Totem of the Maelstrom"]]],
+  ["Hotfixes: Nov 25", "Items", [
+    ["Blackblade of Shahram", "Fixed", "Haste buff only for its wielder"],
+    ["Libram of Law", "Fixed", "Now affects Judgement of Command"],
+    ["Chained Essence of Eranikus", "Fixed", "No longer goes through immunities"],
+    ["Blackhand's Breadth", null, "Trinket can no longer be resisted"],
+    ["Night Watchman's Torch", "Fixed", "Usable while mounted and casting again"]]],
+  ["Hotfixes: Nov 25", "Legacy System", [
+    ["PvP Legacy achievements", "Fixed", "Credit after reaching Exalted"],
+    ["Lord Valthalak Laid to Rest", "Fixed", "Gives Legacy credit correctly"],
+    ["Reinforce", "8-40%", "Less durability loss (corrected)"],
+    ["The Quick and the Dead", "Fixed", "Shadowform, Moonkin, Travel, Trueshot free"]]],
+  ["Hotfixes: Nov 25", "PvP: Alterac Valley", [
+    ["AV lootable quest items", null, "No longer mailed if left unlooted"],
+    ["Killing the General", "Nerf", "Much less Reputation and Honor"],
+    ["Towers, Graveyards, Mines", "Buff", "More Rep, slightly more Honor"],
+    ["Killing enemy NPCs", "Buff", "More Reputation"],
+    ["Defeating Lieutenants", "Buff", "Much more Reputation"]]],
+  ["Hotfixes: Nov 25", "PvP: Alterac Valley", [
+    ["Long match rep bonus", "20 min", "Was 60 minutes"],
+    ["AV enemy creatures", "Buff", "More damage and health"],
+    ["Warmasters and Marshals", null, "Leash outside rooms, aggro from farther"],
+    ["Objective buff on bosses", "4 stacks", "20 min; -1 stack per objective taken"]]],
+  ["Hotfixes: Nov 25", "PvP: Alterac Valley", [
+    ["Generals: damage", "Buff", "Deal more damage"],
+    ["Generals: defense", "Fixed", "Some were less defensive than intended"],
+    ["Generals: stealth detection", "Buff", "Increased"],
+    ["Dev goal", null, "Play objectives, not just rush the General"]]],
+  ["Hotfixes: Nov 25", "Professions and Races", [
+    ["Enchanting: Revelation", "Fixed", "Proc rolls once per wave, not per target"],
+    ["Revelation on channels", "Fixed", "No longer covers full channel duration"],
+    ["Kirin Tor reputation", null, "Gnome/Human/NE/Dwarf can't go to war"],
+    ["Wildhammer Clan", null, "Dwarves can't go to war with them"]]],
+  ["Hotfixes: Nov 25", "Riding and Quests", [
+    ["Paladin + Warlock mount quests", "Fixed", "Now teach Journeyman Riding"],
+    ["Already done the quest?", "Free", "Learn it from the listed class NPCs"],
+    ["Hyjal: Blind Vengeance", "Fixed", "Runeshard no longer buffs Mortal Strike"],
+    ["Saving the Best for Last", "Fixed", "Can be completed now"]]],
+  ["Hotfixes: Nov 25", "Quests", [
+    ["Silithus: Twilight Texts", "Fixed", "Drop again for 3 Cenarion quests"],
+    ["Searing Gorge: STOLEN quest", null, "More Dark Iron Steamsmiths added"],
+    ["WPL: Scarlet Illusion", "1 hour", "Was 30 minutes"]]]
+ ]}
