@@ -154,32 +154,39 @@ def page_layers(label, rows, objective=None):
     return out
 
 def page_layers_dense(label, rows, objective=None):
-    """Smaller text with full explanations: rows are (title, pill or None, detail text wrapped to up to 4 lines)."""
+    """Full explanations, sized to fill the page: rows are (title, pill or None, detail text wrapped).
+    Tries the largest text that fits, so pages with less text get bigger, easier-to-read lines."""
     x0, maxw = PX0 + 44, (PX1 - PX0) - 88
-    head = _text_layer(label.upper(), fit(label.upper(), 'head', 66, maxw), HEAD)
-    tf, df = font('item', 46), font('sub', 36)
-    blocks = []
-    for title, pill, detail in rows:
-        lines = _wrap(detail, df, maxw) if detail else []
-        h = 52 + len(lines) * 42 + 6
-        lay = Image.new('RGBA', (maxw, h), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
-        rw = 0
-        if pill:
-            pf = font('head', 40); rw = pf.getlength(pill) + 24
-            d.text((maxw - pf.getlength(pill), 4), pill, font=pf, fill=HEAD)
-        d.text((0, 0), title, font=fit(title, 'item', 46, maxw - rw), fill=INK)
-        for i, ln in enumerate(lines):
-            d.text((0, 54 + i * 42), ln, font=df, fill=INK_S)
-        blocks.append(lay)
-    obj = []
-    if objective:
-        of, sf = font('head', 50), font('sub', 40)
-        obj = [_text_layer('Quest Objectives', of, HEAD)] + [_text_layer(l, sf, INK) for l in _wrap(objective, sf, maxw)]
-    top, bottom = PY0 + 44, PY1 - 40
-    used = head.height + 20 + sum(b.height for b in blocks) + (sum(o.height for o in obj) + 24 if obj else 0)
-    if used > bottom - top:
-        raise ValueError(f'page "{label}" overflows by {used - (bottom - top)} px')
-    gap = max(12, min(80, (bottom - top - used) / max(1, len(blocks))))
+    top, bottom = PY0 + 40, PY1 - 36
+    avail = bottom - top
+    for k in [x / 100 for x in range(150, 79, -5)]:
+        hs, ts, ds = int(66 * min(k, 1.2)), int(46 * k), int(36 * k)
+        lh = int(ds * 1.18)
+        head = _text_layer(label.upper(), fit(label.upper(), 'head', hs, maxw), HEAD)
+        df = font('sub', ds)
+        blocks = []
+        for title, pill, detail in rows:
+            lines = _wrap(detail, df, maxw) if detail else []
+            h = int(ts * 1.15) + len(lines) * lh + 6
+            lay = Image.new('RGBA', (maxw, h), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
+            rw = 0
+            if pill:
+                pf = font('head', int(ts * 0.87)); rw = pf.getlength(pill) + 24
+                d.text((maxw - pf.getlength(pill), 4), pill, font=pf, fill=HEAD)
+            d.text((0, 0), title, font=fit(title, 'item', ts, maxw - rw), fill=INK)
+            for i, ln in enumerate(lines):
+                d.text((0, int(ts * 1.17) + i * lh), ln, font=df, fill=INK_S)
+            blocks.append(lay)
+        obj = []
+        if objective:
+            of, sf = font('head', int(50 * min(k, 1.2))), font('sub', int(40 * min(k, 1.2)))
+            obj = [_text_layer('Quest Objectives', of, HEAD)] + [_text_layer(l, sf, INK) for l in _wrap(objective, sf, maxw)]
+        used = head.height + 20 + sum(b.height for b in blocks) + (sum(o.height for o in obj) + 24 if obj else 0)
+        if used + 26 * len(blocks) <= avail:
+            break
+    if used > avail:
+        raise ValueError(f'page "{label}" overflows by {used - avail} px')
+    gap = max(12, min(96, (avail - used) / max(1, len(blocks))))
     out = [(head, (x0, top))]; y = top + head.height + 20
     for b in blocks:
         out.append((b, (x0, int(y)))); y += b.height + gap
