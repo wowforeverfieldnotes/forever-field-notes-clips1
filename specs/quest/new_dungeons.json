@@ -1,0 +1,76 @@
+{
+ "name": "new_dungeons",
+ "style": "fel",
+ "dense": true,
+ "objective": "Which one is your favorite so far? Source: Blizzard.",
+ "pages": [
+  [
+   "New Dungeons",
+   "Levels 13-29",
+   [
+    [
+     "Hall of Thanes (13-18)",
+     null,
+     "Beneath Ironforge. The tomb of the dwarven kings, invaded by suspected Dark Iron dwarves. Alliance enter from their capital."
+    ],
+    [
+     "Ruins of Lordaeron (15-20)",
+     null,
+     "The ruined city above the Undercity. The Forsaken are retaking it while a necromancer gathers power."
+    ],
+    [
+     "Excavation Site (24-29)",
+     null,
+     "Wetlands, near Thelgen Rock and Dun Algaz. A strange mist and a time-frozen area full of titan constructs."
+    ]
+   ]
+  ],
+  [
+   "New Dungeons",
+   "Levels 28-45",
+   [
+    [
+     "City of Dalaran (28-33)",
+     null,
+     "Alterac Mountains. Needs an attunement: \"An Alarming Request\" in Southshore or \"Key to the City\" in Tarren Mill. Enter through the sewers."
+    ],
+    [
+     "The Drowned City (35-40)",
+     null,
+     "Off Stranglethorn, west of Grom'gol. Dive to find the entrance. Trolls, naga and a storm that builds to the last fight."
+    ],
+    [
+     "Krol'dok Stronghold (40-45)",
+     null,
+     "An ogre fortress in the Riverglades with workshops and camps. Strange chanting after nightfall."
+    ]
+   ]
+  ],
+  [
+   "New Dungeons",
+   "Levels 48-60",
+   [
+    [
+     "Alcaz Prison (48-53)",
+     null,
+     "Alcaz Island, Dustwallow Marsh. Defias and naga at war inside; rumored prisoners include King Varian Wrynn."
+    ],
+    [
+     "Blackmaw Hold (55-60)",
+     null,
+     "Through a long-sealed gate in Azshara. A corrupted furbolg city with multiple routes."
+    ],
+    [
+     "Shaper's Terrace (58-60)",
+     null,
+     "A titan facility in northern Un'Goro. Bring power crystals from the crater to its consoles."
+    ],
+    [
+     "Good to know",
+     null,
+     "Dungeon enemies give 50% more XP since Nov 9, and final bosses count toward Legacy points."
+    ]
+   ]
+  ]
+ ]
+}

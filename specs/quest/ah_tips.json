@@ -1,0 +1,86 @@
+{
+ "name": "ah_tips",
+ "style": "dusk",
+ "dense": true,
+ "objective": "Sources: ConquestCapped Auction House guide (Nov 13-16), Blizzard Nov 10 hotfixes.",
+ "pages": [
+  [
+   "Auction House Tips",
+   "How it works",
+   [
+    [
+     "One market per faction",
+     null,
+     "A stack posted in Orgrimmar shows in Thunder Bluff and Undercity at the same moment."
+    ],
+    [
+     "5% or 15%",
+     null,
+     "Faction houses keep 5% of a sale. Neutral houses (Gadgetzan, Booty Bay, Everlook) keep 15%."
+    ],
+    [
+     "Deposits",
+     null,
+     "You only get it back if the item sells. The minimum deposit dropped to 1 copper in the Nov 10 hotfixes."
+    ],
+    [
+     "Getting paid",
+     null,
+     "Buyers get items instantly. Your gold arrives by mail about an hour later."
+    ]
+   ]
+  ],
+  [
+   "Auction House Tips",
+   "Sell smarter",
+   [
+    [
+     "Vendor price is your floor",
+     null,
+     "If the sale after the cut is worth less than the vendor price, just vendor it."
+    ],
+    [
+     "Stacks",
+     null,
+     "Ore, herbs and cloth sell cheapest first. Matching the lowest price puts you in line; undercutting by a copper rarely pays."
+    ],
+    [
+     "Gear",
+     null,
+     "Price where most listings sit, not at the cheapest outlier."
+    ],
+    [
+     "Timing",
+     null,
+     "Post in the evening. Prices tend to be higher before raid nights."
+    ]
+   ]
+  ],
+  [
+   "Auction House Tips",
+   "Watch out",
+   [
+    [
+     "Addon prices",
+     null,
+     "Early tooltip prices swing fast. Check the market yourself before big trades."
+    ],
+    [
+     "Flooded markets",
+     null,
+     "Lesser and Greater Magic Wands were saturated in week one."
+    ],
+    [
+     "Steady sellers",
+     null,
+     "Leather, cloth and leveling potions have held their value."
+    ],
+    [
+     "Bank alt",
+     null,
+     "Park one in the capital closest to the Auction House, bank and mailbox."
+    ]
+   ]
+  ]
+ ]
+}

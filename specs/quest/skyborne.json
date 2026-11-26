@@ -1,0 +1,112 @@
+{
+ "name": "skyborne",
+ "style": "frost",
+ "dense": true,
+ "objective": "Horde or Alliance Skyborne? Source: Blizzard.",
+ "pages": [
+  [
+   "Meet the Skyborne",
+   "Quick facts",
+   [
+    [
+     "Who they are",
+     null,
+     "Elves also called shen'dorei, the \"hidden people\"."
+    ],
+    [
+     "Starting zone",
+     null,
+     "Zephras Isle, a brand new zone for levels 1-12."
+    ],
+    [
+     "Pick a side",
+     null,
+     "Windshapers join the Horde, the High Order joins the Alliance."
+    ],
+    [
+     "How to unlock",
+     null,
+     "Needs a Skyborne Heroic Pack or higher. Not included in a normal subscription."
+    ]
+   ]
+  ],
+  [
+   "Meet the Skyborne",
+   "Classes",
+   [
+    [
+     "Both factions",
+     null,
+     "Druid, Hunter, Rogue and Warrior."
+    ],
+    [
+     "Horde Windshaper",
+     null,
+     "Can also be a Shaman."
+    ],
+    [
+     "Alliance High Order",
+     null,
+     "Can also be a Mage."
+    ],
+    [
+     "Druid forms",
+     null,
+     "New druid forms made just for the Skyborne."
+    ]
+   ]
+  ],
+  [
+   "Meet the Skyborne",
+   "Racial abilities",
+   [
+    [
+     "Walk on Air",
+     null,
+     "Glide downward through the air for 10 seconds."
+    ],
+    [
+     "Wind Blessed",
+     null,
+     "Passive: +1% melee, ranged and spell Haste."
+    ],
+    [
+     "Elemental Insight",
+     null,
+     "Passive: +5% damage against Elementals."
+    ],
+    [
+     "Faction racial",
+     null,
+     "Horde Skysight: +10% run speed. Alliance Read Ley Line: activate a ley line for +100% health and mana regen."
+    ]
+   ]
+  ],
+  [
+   "Meet the Skyborne",
+   "Their story",
+   [
+    [
+     "Origins",
+     null,
+     "Highborne exiles made a pact with wind spirits and built a civilization in Skywall."
+    ],
+    [
+     "Zephras Isle today",
+     null,
+     "The wind spirits that protected it have vanished, its structures are failing, and the Skyborne are divided."
+    ],
+    [
+     "Windshapers",
+     null,
+     "Descended from the first shen'dorei given the wind spirits' gift of skysight."
+    ],
+    [
+     "High Order",
+     null,
+     "Descended from the Highborne scholars of Eldre'Thalas."
+    ]
+   ]
+  ]
+ ]
+}

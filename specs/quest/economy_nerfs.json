@@ -1,0 +1,60 @@
+{
+ "name": "economy_nerfs",
+ "style": "ember",
+ "dense": true,
+ "objective": "Sources: Blizzard Nov 10 hotfixes, Blizzard forums, ConquestCapped, Kami Labs.",
+ "pages": [
+  [
+   "Gold Farms Blizzard Killed",
+   "Vendor shuffles",
+   [
+    [
+     "Crafted wands",
+     null,
+     "Enchanting wands sell to vendors for just 1 copper. Players report the AH is flooded too."
+    ],
+    [
+     "Crafted armor",
+     null,
+     "Nov 10: vendors pay less for some Leatherworking, Tailoring and Blacksmithing armor. Blizzard: they were meant to be crafted once."
+    ],
+    [
+     "Iron Grenades",
+     null,
+     "Vendor price cut to 1 silver 25 copper (was 5 silver). Crafting them to sell now loses gold."
+    ],
+    [
+     "Minor Arcane Elixir",
+     null,
+     "Sells for 5 copper (was 25 copper)."
+    ]
+   ]
+  ],
+  [
+   "Gold Farms Blizzard Killed",
+   "And the rest",
+   [
+    [
+     "Mage AoE farms",
+     null,
+     "The Frost slows behind giant AoE pulls were weakened, so classic mage farming is much less profitable (per Kami Labs)."
+    ],
+    [
+     "Black Lotus",
+     null,
+     "A Black Market vendor, Mister Graphed in the Riverglades, sells it at a fixed price, capping what it's worth."
+    ],
+    [
+     "What still works",
+     null,
+     "Most quests level 48 and up now give gold. Leather, cloth and potions sell steadily (ConquestCapped)."
+    ],
+    [
+     "Rule of thumb",
+     null,
+     "Before crafting to vendor, compare the sell price with what the materials cost."
+    ]
+   ]
+  ]
+ ]
+}

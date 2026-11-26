@@ -1,0 +1,81 @@
+{
+ "name": "clip5_hyjal_summit",
+ "style": "ember",
+ "dense": true,
+ "objective": "Are you ready for December 9? Sources: Blizzard raid overview, Warcraft Wiki, Icy Veins.",
+ "pages": [
+  [
+   "Hyjal Summit",
+   "Raid basics",
+   [
+    [
+     "Unlocks December 9",
+     null,
+     "Level 60, together with Barrow Deeps and Onyxia's Lair."
+    ],
+    [
+     "20 players, 13 bosses",
+     null,
+     "The biggest of the new raids. Forever raids don't scale, so plan for exactly 20 (per Icy Veins)."
+    ],
+    [
+     "Weekly reset",
+     null,
+     "All WoW: Forever raids are currently planned to reset weekly."
+    ]
+   ]
+  ],
+  [
+   "Hyjal Summit",
+   "The climb",
+   [
+    [
+     "Location",
+     null,
+     "The summit of Mount Hyjal, near the World Tree Nordrassil."
+    ],
+    [
+     "First fight",
+     null,
+     "The raid opens with a battle against an ancient guardian."
+    ],
+    [
+     "Many routes",
+     null,
+     "Paths cross the mountain through ruins above and below ground."
+    ],
+    [
+     "The finale",
+     null,
+     "Clear the forces threatening Hyjal to open the way to the final encounters."
+    ]
+   ]
+  ],
+  [
+   "Hyjal Summit",
+   "What we know",
+   [
+    [
+     "Boss names so far",
+     null,
+     "Bandalar, Time-Lost Battalion, Old Gloomlurker, Kathris the Haunted, Elder Minderel, Council of Thorns (Warcraft Wiki)."
+    ],
+    [
+     "Final boss",
+     null,
+     "Nythus the Dreambound, per Warcraft Wiki."
+    ],
+    [
+     "A legendary",
+     null,
+     "Icy Veins reports Forever's first legendary is tied to Hyjal Summit."
+    ],
+    [
+     "Legacy point",
+     null,
+     "Defeat all 13 bosses for 1 account-wide Legacy point."
+    ]
+   ]
+  ]
+ ]
+}

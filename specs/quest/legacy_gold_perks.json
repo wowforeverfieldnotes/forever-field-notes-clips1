@@ -1,0 +1,76 @@
+{
+ "name": "legacy_gold_perks",
+ "style": "parchment",
+ "dense": true,
+ "objective": "Source: Blizzard Legacy System preview.",
+ "pages": [
+  [
+   "Legacy Perks for Gold",
+   "Earn more",
+   [
+    [
+     "Bountiful Harvest",
+     null,
+     "Extra Scarce resources from Mining, Herbalism and Skinning. Scarce mats are the ones worth holding."
+    ],
+    [
+     "Performance",
+     null,
+     "Sometimes extra Merchant's Favor from the Azeroth Commerce Authority or Durotar Supply and Logistics."
+    ],
+    [
+     "Master Chef and Luremaster",
+     null,
+     "A chance for extra cooking results, and a chance to catch extra fish."
+    ],
+    [
+     "Dedicated Study",
+     null,
+     "A daily cooldown that speeds up skill-ups. With every tradeskill at 300 it gives free Elemental Essences."
+    ]
+   ]
+  ],
+  [
+   "Legacy Perks for Gold",
+   "Spend less",
+   [
+    [
+     "Bartering",
+     null,
+     "Lower prices on items bought from vendors (Blizzard gives no exact amount)."
+    ],
+    [
+     "Reagent Economy",
+     null,
+     "Class spells stop needing bought reagents, and tier 1 camp features need no materials."
+    ],
+    [
+     "Reinforce",
+     null,
+     "Less durability lost when you die, so smaller repair bills."
+    ],
+    [
+     "Frequent Flier",
+     null,
+     "Cheaper and faster flight paths."
+    ]
+   ]
+  ],
+  [
+   "Legacy Perks for Gold",
+   "How to spend",
+   [
+    [
+     "16 points per character",
+     null,
+     "Each character picks its own perks, so a gatherer and a crafter can take different trees."
+    ],
+    [
+     "Points are account-wide",
+     null,
+     "Every challenge you finish on any character adds to the pool for all of them."
+    ]
+   ]
+  ]
+ ]
+}

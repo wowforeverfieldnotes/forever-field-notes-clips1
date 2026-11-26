@@ -1,0 +1,81 @@
+{
+ "name": "economy_rules",
+ "style": "arcane",
+ "dense": true,
+ "objective": "Sources: Blizzard, Warcraft Tavern, ConquestCapped.",
+ "pages": [
+  [
+   "Economy Rules",
+   "No shortcuts",
+   [
+    [
+     "No WoW Token",
+     null,
+     "There is no way to buy gold from Blizzard in WoW: Forever."
+    ],
+    [
+     "No GDKP",
+     null,
+     "Blizzard confirmed at its Sept 17 developer Q&A that gold-bid loot runs aren't allowed."
+    ],
+    [
+     "Why",
+     null,
+     "Blizzard says GDKP makes raiding harder to join for new players and pushes people to buy gold."
+    ]
+   ]
+  ],
+  [
+   "Economy Rules",
+   "Buying gold",
+   [
+    [
+     "Temporary Economy Holds",
+     null,
+     "Announced Oct 13. A flagged account loses trade, mail, guild bank and Auction House while Blizzard investigates."
+    ],
+    [
+     "Both sides",
+     null,
+     "Buyers and sellers of illicit gold can both be flagged."
+    ],
+    [
+     "If you're cleared",
+     null,
+     "The hold lifts automatically and leaves no permanent strike."
+    ],
+    [
+     "If it's proven",
+     null,
+     "Blizzard says it will punish gold buyers aggressively, up to permanent account loss."
+    ]
+   ]
+  ],
+  [
+   "Economy Rules",
+   "How the market works",
+   [
+    [
+     "One market per faction",
+     null,
+     "All three capitals of a faction share one Auction House (per ConquestCapped)."
+    ],
+    [
+     "Trading across factions",
+     null,
+     "Only at the neutral houses in Gadgetzan, Booty Bay and Everlook, which take 15% instead of 5%."
+    ],
+    [
+     "Price-capped reagents",
+     null,
+     "Mister Graphed at the Black Market in the Riverglades sells rare reagents like Black Lotus at a fixed price."
+    ],
+    [
+     "More quest gold",
+     null,
+     "Since Nov 10, most quests level 48 and up also reward gold."
+    ]
+   ]
+  ]
+ ]
+}

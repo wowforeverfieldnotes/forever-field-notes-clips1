@@ -1,0 +1,128 @@
+{
+ "name": "first_aid",
+ "style": "frost",
+ "dense": true,
+ "objective": "Which potion are you crafting first? Source: Icy Veins First Aid guide.",
+ "pages": [
+  [
+   "First Aid",
+   "Potions for everyone",
+   [
+    [
+     "Moved from Alchemy",
+     null,
+     "In WoW: Forever healing potions are made with First Aid, not Alchemy."
+    ],
+    [
+     "No profession slot",
+     null,
+     "First Aid is a secondary profession, so every character can learn it."
+    ],
+    [
+     "Instant in combat",
+     null,
+     "Potions share a 2-minute cooldown. Bandages still work as before."
+    ],
+    [
+     "Pair it with Herbalism",
+     null,
+     "Every potion needs an herb, a vial and spices."
+    ]
+   ]
+  ],
+  [
+   "First Aid",
+   "Trainer potions",
+   [
+    [
+     "Minor Healing Potion",
+     null,
+     "Skill 1. Heals 70-90. Peacebloom, Empty Vial, Mild Spices."
+    ],
+    [
+     "Lesser Healing Potion",
+     null,
+     "Skill 55. Heals 140-180. Briarthorn, Empty Vial, Mild Spices."
+    ],
+    [
+     "Healing Potion",
+     null,
+     "Skill 110. Heals 280-360. Bruiseweed, Leaded Vial, Hot Spices."
+    ]
+   ]
+  ],
+  [
+   "First Aid",
+   "Potions from manuals",
+   [
+    [
+     "Greater Healing Potion",
+     null,
+     "Skill 155. Heals 455-585. Manual drops from a Syndicate Mercenary in Arathi Highlands."
+    ],
+    [
+     "Superior Healing Potion",
+     null,
+     "Skill 215. Heals 700-900. Learned from its manual."
+    ],
+    [
+     "Major Healing Potion",
+     null,
+     "Skill 275. Heals 1,050-1,750. Manual sold by Pexmit in Mount Hyjal."
+    ]
+   ]
+  ],
+  [
+   "First Aid",
+   "New cures",
+   [
+    [
+     "Anti-Venoms",
+     null,
+     "Remove poisons, usable in combat. From Anti-Venom at 80 up to Powerful Anti-Venom at 300 (Argent Dawn, Honored)."
+    ],
+    [
+     "Poultices",
+     null,
+     "Remove diseases, out of combat. Simple Poultice at 90 from the trainer."
+    ],
+    [
+     "Tourniquets",
+     null,
+     "Remove bleeds, out of combat. Woolen Tourniquet at 120 from the trainer."
+    ],
+    [
+     "Best bandage",
+     null,
+     "Heavy Runecloth Bandage: 290 skill to make, heals 2,000 over 8 seconds."
+    ]
+   ]
+  ],
+  [
+   "First Aid",
+   "Ranks up to 300",
+   [
+    [
+     "Apprentice and Journeyman",
+     null,
+     "Any First Aid trainer, up to 75 and 150 skill."
+    ],
+    [
+     "Expert (225)",
+     null,
+     "Buy Expert First Aid - Under Wraps at 125 skill: Deneb Walker, Stromgarde (Alliance) or Balai Lok'Wein, Brackenwall (Horde)."
+    ],
+    [
+     "Artisan (300)",
+     null,
+     "Level 35 and 225 skill. Quest \"Triage\" in Theramore (Alliance) or Hammerfall (Horde)."
+    ],
+    [
+     "First Aid Kit (20)",
+     null,
+     "Campfire item: Stamina buff up to +56 at level 60. Does not stack with Fortitude."
+    ]
+   ]
+  ]
+ ]
+}

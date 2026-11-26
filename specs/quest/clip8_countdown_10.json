@@ -1,0 +1,81 @@
+{
+ "name": "clip8_countdown_10",
+ "style": "dusk",
+ "dense": true,
+ "objective": "Got your Drakefire Amulet yet? Source: Blizzard raid overview.",
+ "pages": [
+  [
+   "Raid Countdown",
+   "10 days to go",
+   [
+    [
+     "Onyxia's Lair (40)",
+     null,
+     "Dustwallow Marsh. Three phases of heavy fire: build fire resistance and be ready to move."
+    ],
+    [
+     "Hyjal Summit (20)",
+     null,
+     "13 bosses on the summit near Nordrassil, starting with an ancient guardian."
+    ],
+    [
+     "Barrow Deeps (10)",
+     null,
+     "8 bosses in the prison that held Illidan, with entrances in Hyjal, Winterspring and Blackmaw Hold."
+    ],
+    [
+     "Weekly reset",
+     null,
+     "All three unlock December 9 and are planned to reset weekly."
+    ]
+   ]
+  ],
+  [
+   "Raid Countdown",
+   "Onyxia attunement",
+   [
+    [
+     "Everyone needs it",
+     null,
+     "Every raider must carry the Drakefire Amulet in their bags. It doesn't need to be equipped."
+    ],
+    [
+     "Alliance",
+     null,
+     "\"Dragonkin Menace\" (Burning Steppes), The True Masters, rescue Marshal Windsor from Blackrock Depths, The Great Masquerade, The Dragon's Eye."
+    ],
+    [
+     "Horde",
+     null,
+     "\"Blood and Thunder\" (Kargath), Rend's head, Rexxar in Desolace, Myranda the Hag, Emberstrife and four dragon skulls."
+    ],
+    [
+     "Both end the same way",
+     null,
+     "Take the Blood of the Black Dragon Champion from General Drakkisath in Upper Blackrock Spire."
+    ]
+   ]
+  ],
+  [
+   "Raid Countdown",
+   "Get ready",
+   [
+    [
+     "Start now",
+     null,
+     "Blizzard advises starting early, bringing friends for elite quests, and planning several dungeon runs."
+    ],
+    [
+     "Stock potions",
+     null,
+     "Healing potions are made with First Aid in Forever, so anyone can craft a stack."
+    ],
+    [
+     "Legacy points",
+     null,
+     "Onyxia, a full Hyjal clear and a full Barrow Deeps clear are worth 1 point each."
+    ]
+   ]
+  ]
+ ]
+}

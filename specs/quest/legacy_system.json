@@ -1,0 +1,107 @@
+{
+ "name": "legacy_system",
+ "style": "parchment",
+ "dense": true,
+ "objective": "Which perk are you taking first? Source: Blizzard.",
+ "pages": [
+  [
+   "Legacy System",
+   "How it works",
+   [
+    [
+     "Account-wide points",
+     null,
+     "65 Legacy Challenges, 1 point each, shared across your Battle.net account (not Hardcore)."
+    ],
+    [
+     "When it unlocks",
+     null,
+     "With your first point, usually level 25. Also 150 in a crafting profession, or exploring the whole map."
+    ],
+    [
+     "Open it",
+     null,
+     "Shield icon on the menu bar, or press Y."
+    ],
+    [
+     "16 points per character",
+     null,
+     "Each character spends its own. One character alone can earn 29, so alts are optional."
+    ]
+   ]
+  ],
+  [
+   "Legacy System",
+   "Earning points",
+   [
+    [
+     "Classes (27)",
+     null,
+     "Reach level 25, 45 and 60 on each class."
+    ],
+    [
+     "Tradeskills (18)",
+     null,
+     "Reach 150, 225 and 300 in each crafting profession."
+    ],
+    [
+     "PvP (12)",
+     null,
+     "Ranks 3, 7, 10, 13 and 14, Exalted with each battleground faction, and Season's Journey quests."
+    ],
+    [
+     "Dungeons, Raids, Adventure (8)",
+     null,
+     "Final bosses of each dungeon bracket, Onyxia plus full Hyjal and Barrow Deeps clears, exploring the map, and the Lord Valthalak questline."
+    ]
+   ]
+  ],
+  [
+   "Legacy System",
+   "Three perk trees",
+   [
+    [
+     "Professions",
+     null,
+     "Working Overtime, Bountiful Harvest, Bartering, Performance, Master Chef, Luremaster, Dedicated Study."
+    ],
+    [
+     "Adventure",
+     null,
+     "Well Rested, Thrill of Adventure, High Alert, Field Guide, Field Medicine, Talented, Frequent Flier."
+    ],
+    [
+     "Resourcefulness",
+     null,
+     "Gourmand, The Quick and the Dead, Reinforce, For Great Honor, Permanence, Diplomat, Reagent Economy."
+    ]
+   ]
+  ],
+  [
+   "Legacy System",
+   "Standouts and rewards",
+   [
+    [
+     "Talented",
+     null,
+     "Talent points unlock up to 5 levels earlier."
+    ],
+    [
+     "Well Rested",
+     null,
+     "A bigger rested XP pool that fills faster."
+    ],
+    [
+     "Reagent Economy",
+     null,
+     "Class spells stop needing bought reagents, and tier 1 camp features cost nothing."
+    ],
+    [
+     "Rewards",
+     null,
+     "Replica Ironforge Air Rifle toy, Spectral Bear Cub, Spectral Bear Tabard and the Reins of the Spectral Bear."
+    ]
+   ]
+  ]
+ ]
+}

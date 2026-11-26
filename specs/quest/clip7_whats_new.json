@@ -1,0 +1,86 @@
+{
+ "name": "clip7_whats_new",
+ "style": "arcane",
+ "dense": true,
+ "objective": "What are you most excited for? Source: Blizzard.",
+ "pages": [
+  [
+   "New in WoW: Forever",
+   "The basics",
+   [
+    [
+     "Launched Nov 4, 2026",
+     null,
+     "A permanent version of original Azeroth, level 60. Blizzard: not a mode, a season or a new version of Classic."
+    ],
+    [
+     "Every class, both sides",
+     null,
+     "All nine classes are playable on both factions."
+    ],
+    [
+     "Talents and specs",
+     null,
+     "Talents unlock at level 10. Dual Specialization at level 40."
+    ],
+    [
+     "New race",
+     null,
+     "The Skyborne, starting on Zephras Isle."
+    ]
+   ]
+  ],
+  [
+   "New in WoW: Forever",
+   "New content",
+   [
+    [
+     "9 new dungeons",
+     null,
+     "From Hall of Thanes at level 13 to Shaper's Terrace at 58-60."
+    ],
+    [
+     "3 raids on December 9",
+     null,
+     "Onyxia's Lair (40), Hyjal Summit (20) and Barrow Deeps (10)."
+    ],
+    [
+     "Darkspear Islands",
+     null,
+     "15v15 battleground for levels 30-60 off Dustwallow Marsh: four bases, a central flag, first to 2000 points."
+    ],
+    [
+     "Legacy System",
+     null,
+     "Account-wide challenges unlock perks and rewards like the Spectral Bear mount."
+    ]
+   ]
+  ],
+  [
+   "New in WoW: Forever",
+   "Changed systems",
+   [
+    [
+     "Healing potions",
+     null,
+     "Now made with First Aid, so every character can craft them."
+    ],
+    [
+     "Camping",
+     null,
+     "Build campfires and place profession features for group buffs."
+    ],
+    [
+     "Waylaid Crates",
+     null,
+     "Fill them with materials for Merchant's Favor rewards."
+    ],
+    [
+     "Coming later",
+     null,
+     "More raids, dungeons, PvP and Hardcore, no dates yet. Scarlet Enclave and Ashbringer are confirmed to return."
+    ]
+   ]
+  ]
+ ]
+}

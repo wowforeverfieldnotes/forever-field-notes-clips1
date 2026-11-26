@@ -1,0 +1,81 @@
+{
+ "name": "clip6_barrow_deeps",
+ "style": "fel",
+ "dense": true,
+ "objective": "Who's bringing the 10? Sources: Blizzard, Warcraft Wiki.",
+ "pages": [
+  [
+   "Barrow Deeps",
+   "Raid basics",
+   [
+    [
+     "Unlocks December 9",
+     null,
+     "Level 60, 10 players, 8 bosses."
+    ],
+    [
+     "Illidan's prison",
+     null,
+     "It held Illidan Stormrage for 10,000 years. Now its passages have been opened."
+    ],
+    [
+     "Where",
+     null,
+     "Hidden beneath Kalimdor, inside Mount Hyjal."
+    ],
+    [
+     "Three ways in",
+     null,
+     "Entrances connect through Mount Hyjal, Winterspring and Blackmaw Hold."
+    ]
+   ]
+  ],
+  [
+   "Barrow Deeps",
+   "What waits inside",
+   [
+    [
+     "The story",
+     null,
+     "Find out what happened to those left behind, and how the wardens plan to contain the danger."
+    ],
+    [
+     "Multiple paths",
+     null,
+     "Method reports several routes and changing themes as you go deeper."
+    ],
+    [
+     "Weekly reset",
+     null,
+     "All WoW: Forever raids are currently planned to reset weekly."
+    ],
+    [
+     "Legacy point",
+     null,
+     "Defeat all 8 bosses for 1 account-wide Legacy point."
+    ]
+   ]
+  ],
+  [
+   "Barrow Deeps",
+   "The bosses",
+   [
+    [
+     "First four",
+     null,
+     "Deepscar Matriarch, Khalith the Dreadspinner, Amethrax, Ravus and Darlissa."
+    ],
+    [
+     "Next three",
+     null,
+     "Elder Tangleclaw, Well of Sorrow, Del'lynar Songwood."
+    ],
+    [
+     "Final boss",
+     null,
+     "Sonya Darkhallow. Boss names per Warcraft Wiki."
+    ]
+   ]
+  ]
+ ]
+}
