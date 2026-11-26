@@ -1,0 +1,128 @@
+{
+ "name": "hotfix_2026_11_25_part4",
+ "style": "dusk",
+ "dense": true,
+ "objective": "Full notes: official Blizzard hotfix post, linked in the description.",
+ "pages": [
+  [
+   "Hotfixes: Nov 25 (4/4)",
+   "Enchanting and Races",
+   [
+    [
+     "Revelation enchant",
+     null,
+     "Its proc chance now rolls once per wave of an area spell, not once for every target hit."
+    ],
+    [
+     "Revelation on channels",
+     null,
+     "No longer lasts for the whole duration of channeled spells."
+    ],
+    [
+     "Kirin Tor reputation",
+     null,
+     "Gnomes, Humans, Night Elves and Dwarves can no longer go to war with the Kirin Tor."
+    ],
+    [
+     "Wildhammer Clan",
+     null,
+     "Dwarves can no longer go to war with the Wildhammer Clan."
+    ]
+   ]
+  ],
+  [
+   "Hotfixes: Nov 25 (4/4)",
+   "Riding: Paladins and Warlocks",
+   [
+    [
+     "Class mount quests",
+     null,
+     "These class mount quests now also teach Journeyman Riding:"
+    ],
+    [
+     "Paladin quests",
+     null,
+     "Justice and Retribution (Forsaken Paladins), Judgment and Redemption (Dwarf and Human Paladins)."
+    ],
+    [
+     "Warlock quest",
+     null,
+     "Dreadsteed of Xoroth (all Warlocks)."
+    ]
+   ]
+  ],
+  [
+   "Hotfixes: Nov 25 (4/4)",
+   "Already did the quest?",
+   [
+    [
+     "Learn it free from:",
+     null,
+     "Talk to these NPCs for a free Journeyman Riding option."
+    ],
+    [
+     "Forsaken Paladins",
+     null,
+     "Danitha Morr in Bandarion Keep."
+    ],
+    [
+     "Alliance Paladins",
+     null,
+     "Lord Grayson Shadowbreaker in Stormwind Cathedral."
+    ],
+    [
+     "Horde Warlocks",
+     null,
+     "Zevrost at the Cleft of Shadow, Orgrimmar."
+    ],
+    [
+     "Alliance Warlocks",
+     null,
+     "Ursula Deline at the Slaughtered Lamb, Stormwind."
+    ]
+   ]
+  ],
+  [
+   "Hotfixes: Nov 25 (4/4)",
+   "Quests",
+   [
+    [
+     "Hyjal: Blind Vengeance",
+     null,
+     "The Explosive Runeshard no longer hugely boosts the Felguard Sentinel's Mortal Strike."
+    ],
+    [
+     "Hunter: Saving the Best for Last",
+     null,
+     "The Horde version can now be completed."
+    ],
+    [
+     "Silithus: Twilight Texts",
+     null,
+     "Encrypted Twilight Texts drop again for Secret Communication, True Believers and Still Believing."
+    ]
+   ]
+  ],
+  [
+   "Hotfixes: Nov 25 (4/4)",
+   "More quests",
+   [
+    [
+     "Twilight Texts repeatable",
+     null,
+     "The repeatable Cenarion Circle turn-in is off on purpose. Still Believing can still send you a recipe by mail later."
+    ],
+    [
+     "Searing Gorge: STOLEN quest",
+     null,
+     "The Dark Iron have recruited more Steamsmiths for Smithing Tuyere and Lookout's Spyglass."
+    ],
+    [
+     "WPL: Scarlet Subterfuge",
+     null,
+     "The Scarlet Illusion now lasts 1 hour instead of 30 minutes."
+    ]
+   ]
+  ]
+ ]
+}

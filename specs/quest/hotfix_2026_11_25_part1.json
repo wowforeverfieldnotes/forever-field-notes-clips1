@@ -1,0 +1,154 @@
+{
+ "name": "hotfix_2026_11_25_part1",
+ "style": "ember",
+ "dense": true,
+ "objective": "Full notes: official Blizzard hotfix post, linked in the description.",
+ "pages": [
+  [
+   "Hotfixes: Nov 25 (1/4)",
+   "Druid: Balance talents",
+   [
+    [
+     "Starlight Wrath",
+     null,
+     "Improved Wrath is now Starlight Wrath. It also cuts Starfire's cast time by 0.1, 0.2, 0.3, 0.4 or 0.5 seconds, by rank."
+    ],
+    [
+     "Moon and Stars",
+     null,
+     "Improved Moonfire is now Moon and Stars. It gives Starfire a 50 or 100% chance not to lose cast time when you take damage."
+    ],
+    [
+     "Improved Starfire",
+     null,
+     "Cut from 5 points to 2: an 8% or 15% chance. Druids with 3 or more points in it get all talent points reset."
+    ]
+   ]
+  ],
+  [
+   "Hotfixes: Nov 25 (1/4)",
+   "Druid: more changes",
+   [
+    [
+     "Eclipse",
+     null,
+     "Eclipse now also raises Wrath's critical strike chance by 7, 13 or 20% at all times."
+    ],
+    [
+     "Dreamstate",
+     null,
+     "Moonfury is gone. Dreamstate gives you 20 to 100% of Innervate's benefit when you cast Innervate on someone else."
+    ],
+    [
+     "Moonkin Form",
+     null,
+     "Moonkin Form now also raises your Arcane and Nature damage by 10% while it is active."
+    ]
+   ]
+  ],
+  [
+   "Hotfixes: Nov 25 (1/4)",
+   "Druid fixes and Hunter",
+   [
+    [
+     "Hurricane",
+     null,
+     "Hurricane's final hit now lands correctly."
+    ],
+    [
+     "Genesis",
+     null,
+     "Genesis now boosts Hurricane's damage and Tranquility's healing."
+    ],
+    [
+     "Hunter pets",
+     null,
+     "Pets had 0% critical strike chance on their basic melee attacks. That is fixed."
+    ]
+   ]
+  ],
+  [
+   "Hotfixes: Nov 25 (1/4)",
+   "Hunter: Beast Mastery Hawks",
+   [
+    [
+     "Hawks attack on summon",
+     null,
+     "Summoned Hawks attack the target you summon them on, even if your pet is set to Passive."
+    ],
+    [
+     "Dismissing Hawks",
+     null,
+     "Hawks leave when Dismiss Pet finishes, or when you right-click their icon below your portrait."
+    ],
+    [
+     "Idle Hawks",
+     null,
+     "Hawks attack your current target if they are not already attacking something."
+    ],
+    [
+     "Hawk crit",
+     null,
+     "Hawks had about 5% less critical strike chance than intended."
+    ]
+   ]
+  ],
+  [
+   "Hotfixes: Nov 25 (1/4)",
+   "Paladin and Rogue",
+   [
+    [
+     "Paladin: Judgements",
+     null,
+     "Judgements on enemies now refresh from your attacks when they have less than 20 seconds left."
+    ],
+    [
+     "Paladin: Exorcism",
+     null,
+     "Exorcism can now critically strike."
+    ],
+    [
+     "Holy: Oath of Light",
+     null,
+     "Oath of Light now lasts 60 minutes."
+    ],
+    [
+     "Rogue: Poisons",
+     null,
+     "All Rogue Poisons and Blinding Powder are bind-on-pickup for now, while Blizzard fixes a bug."
+    ],
+    [
+     "Rogue: Poised",
+     null,
+     "Poised is now removed when you cast Sap or Distract from Stealth."
+    ]
+   ]
+  ],
+  [
+   "Hotfixes: Nov 25 (1/4)",
+   "Shaman, Warlock and Warrior",
+   [
+    [
+     "Shaman: Chain Lightning",
+     null,
+     "Chain Lightning now uses up Clearcasting when you have both Clearcasting and 5 stacks of Maelstrom Weapon."
+    ],
+    [
+     "Warlock pets",
+     null,
+     "Pets had 0% critical strike chance on basic melee attacks."
+    ],
+    [
+     "Succubus and Incubus",
+     null,
+     "They had 5% more critical strike chance than intended."
+    ],
+    [
+     "Arms: Weaponmaster",
+     null,
+     "Weaponmaster now reapplies after you die in Battlegrounds."
+    ]
+   ]
+  ]
+ ]
+}

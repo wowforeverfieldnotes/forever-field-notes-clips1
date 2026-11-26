@@ -1,0 +1,102 @@
+{
+ "name": "hotfix_2026_11_25_part3",
+ "style": "fel",
+ "dense": true,
+ "objective": "Full notes: official Blizzard hotfix post, linked in the description.",
+ "pages": [
+  [
+   "Hotfixes: Nov 25 (3/4)",
+   "Alterac Valley: why",
+   [
+    [
+     "The problem",
+     null,
+     "Teams often rushed the enemy General and won without taking objectives."
+    ],
+    [
+     "The goal",
+     null,
+     "Reward objective play. Honor stays about the same, but you earn more reputation per match, so longer games pay off."
+    ],
+    [
+     "Also fixed",
+     null,
+     "AV enemies were weaker than intended. Warmasters, Marshals and Generals are now sturdier."
+    ]
+   ]
+  ],
+  [
+   "Hotfixes: Nov 25 (3/4)",
+   "Alterac Valley: rewards",
+   [
+    [
+     "Killing the General",
+     null,
+     "Reputation and Honor for killing the enemy General are much lower."
+    ],
+    [
+     "Towers, Graveyards, Mines",
+     null,
+     "More reputation, and slightly more Honor, for taking them."
+    ],
+    [
+     "Killing enemy NPCs",
+     null,
+     "More reputation."
+    ],
+    [
+     "Defeating Lieutenants",
+     null,
+     "Much more reputation."
+    ]
+   ]
+  ],
+  [
+   "Hotfixes: Nov 25 (3/4)",
+   "Alterac Valley: long games",
+   [
+    [
+     "Long match bonus",
+     null,
+     "Bonus reputation now starts after 20 minutes instead of 60."
+    ],
+    [
+     "Holding at the end",
+     null,
+     "Holding graveyards and mines at the end of a long match now gives a lot of reputation."
+    ],
+    [
+     "Storm Crystals and quest items",
+     null,
+     "No longer mailed to you if you leave them unlooted."
+    ]
+   ]
+  ],
+  [
+   "Hotfixes: Nov 25 (3/4)",
+   "Alterac Valley: bosses",
+   [
+    [
+     "All AV enemies",
+     null,
+     "More health and more damage."
+    ],
+    [
+     "Warmasters and Marshals",
+     null,
+     "They now reset if pulled out of their rooms, and notice you from farther away."
+    ],
+    [
+     "Objective buff",
+     null,
+     "Generals, Warmasters and Marshals get a 20-minute buff with 4 stacks. Each objective you capture removes one stack."
+    ],
+    [
+     "Generals",
+     null,
+     "More damage, better stealth detection, and a bug that made some less tanky is fixed."
+    ]
+   ]
+  ]
+ ]
+}

@@ -1,0 +1,112 @@
+{
+ "name": "hotfix_2026_11_25_part2",
+ "style": "arcane",
+ "dense": true,
+ "objective": "Full notes: official Blizzard hotfix post, linked in the description.",
+ "pages": [
+  [
+   "Hotfixes: Nov 25 (2/4)",
+   "Dungeons and NPCs",
+   [
+    [
+     "Blackfathom Deeps: Altar",
+     null,
+     "The Altar of the Deeps can be used again after 3 seconds and correctly gives the Blessing of Blackfathom."
+    ],
+    [
+     "Sunken Temple: Hakkar",
+     null,
+     "The Avatar of Hakkar no longer fails to spawn."
+    ],
+    [
+     "Desolace: Magram Village",
+     null,
+     "Centaurs in Magram Village respawn more quickly."
+    ],
+    [
+     "Duskwood: Lost Knight",
+     null,
+     "No longer sometimes spawns inside a tree."
+    ],
+    [
+     "Riverglades: Clubtoe",
+     null,
+     "Clubtoe in Sunnyglade no longer flags you for PvP."
+    ]
+   ]
+  ],
+  [
+   "Hotfixes: Nov 25 (2/4)",
+   "Items",
+   [
+    [
+     "Unerring Purpose",
+     null,
+     "Now sells to vendors for more than 2 copper."
+    ],
+    [
+     "Totem of the Storm",
+     null,
+     "Now called Totem of the Maelstrom."
+    ],
+    [
+     "Blackblade of Shahram",
+     null,
+     "Its haste buff now works correctly and only affects the person wielding it."
+    ],
+    [
+     "Libram of Law",
+     null,
+     "Now affects Judgement of Command."
+    ]
+   ]
+  ],
+  [
+   "Hotfixes: Nov 25 (2/4)",
+   "More items",
+   [
+    [
+     "Chained Essence of Eranikus",
+     null,
+     "No longer goes through immunities."
+    ],
+    [
+     "Blackhand's Breadth",
+     null,
+     "This trinket can no longer be resisted."
+    ],
+    [
+     "Night Watchman's Torch",
+     null,
+     "Usable again while mounted or casting. It broke as a side effect of a different bug fix."
+    ]
+   ]
+  ],
+  [
+   "Hotfixes: Nov 25 (2/4)",
+   "Legacy System",
+   [
+    [
+     "PvP Legacy achievements",
+     null,
+     "They stopped giving credit once you reached Exalted. Now they keep counting."
+    ],
+    [
+     "Lord Valthalak Laid to Rest",
+     null,
+     "Finishing this quest should now give Legacy credit."
+    ],
+    [
+     "Reinforce",
+     null,
+     "Now really cuts durability loss by 8, 16, 24, 32 or 40%. It did not work as stated before."
+    ],
+    [
+     "The Quick and the Dead",
+     null,
+     "Now makes Shadowform, Moonkin Form, Travel Form and Trueshot Aura free, as intended."
+    ]
+   ]
+  ]
+ ]
+}

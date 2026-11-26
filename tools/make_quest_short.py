@@ -153,6 +153,47 @@ def page_layers(label, rows, objective=None):
             out.append((o, (x0, int(y)))); y += o.height
     return out
 
+def page_layers_dense(label, rows, objective=None):
+    """Smaller text with full explanations: rows are (title, pill or None, detail text wrapped to up to 4 lines)."""
+    x0, maxw = PX0 + 44, (PX1 - PX0) - 88
+    head = _text_layer(label.upper(), fit(label.upper(), 'head', 66, maxw), HEAD)
+    tf, df = font('item', 46), font('sub', 36)
+    blocks = []
+    for title, pill, detail in rows:
+        lines = _wrap(detail, df, maxw) if detail else []
+        h = 52 + len(lines) * 42 + 6
+        lay = Image.new('RGBA', (maxw, h), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
+        rw = 0
+        if pill:
+            pf = font('head', 40); rw = pf.getlength(pill) + 24
+            d.text((maxw - pf.getlength(pill), 4), pill, font=pf, fill=HEAD)
+        d.text((0, 0), title, font=fit(title, 'item', 46, maxw - rw), fill=INK)
+        for i, ln in enumerate(lines):
+            d.text((0, 54 + i * 42), ln, font=df, fill=INK_S)
+        blocks.append(lay)
+    obj = []
+    if objective:
+        of, sf = font('head', 50), font('sub', 40)
+        obj = [_text_layer('Quest Objectives', of, HEAD)] + [_text_layer(l, sf, INK) for l in _wrap(objective, sf, maxw)]
+    top, bottom = PY0 + 44, PY1 - 40
+    used = head.height + 20 + sum(b.height for b in blocks) + (sum(o.height for o in obj) + 24 if obj else 0)
+    if used > bottom - top:
+        raise ValueError(f'page "{label}" overflows by {used - (bottom - top)} px')
+    gap = max(12, min(80, (bottom - top - used) / max(1, len(blocks))))
+    out = [(head, (x0, top))]; y = top + head.height + 20
+    for b in blocks:
+        out.append((b, (x0, int(y)))); y += b.height + gap
+    if obj:
+        y += 4
+        for o in obj:
+            out.append((o, (x0, int(y)))); y += o.height
+    return out
+
+def page_seconds(rows, objective=None):
+    """Reading time: about 3.3 words a second plus a beat, between 10 and 22 seconds."""
+    words = sum(len((' '.join(x for x in r if x)).split()) for r in rows) + (len(objective.split()) if objective else 0)
+    return float(min(22, max(10, round(3 + words / 3.3))))
+
 def _wrap(text, f, maxw):
     words, lines, cur = text.split(), [], ''
     for w_ in words:
@@ -174,31 +215,39 @@ def _fade(lay, a):
 
 START, STEP, FADE = 0.5, 0.75, 0.35
 
-def render(name, pages, out_path, style='dusk', objective='Follow Forever Field Notes for more WoW: Forever guides.'):
-    """pages: list of (page_name, label, rows). Music + a whoosh on every line, timed to the reveals."""
-    total = PAGE * len(pages); tmp = out_path[:-4] + '.tmp.mp4'
+def render(name, pages, out_path, style='dusk', objective='Follow Forever Field Notes for more WoW: Forever guides.', dense=False):
+    """pages: list of (page_name, label, rows). dense=True: smaller text, wrapped explanations, page length set by reading time.
+    Music + a whoosh on every line, timed to the reveals."""
     built = []
     for pi, (pname, label, rows) in enumerate(pages):
-        built.append((base_frame(pname), page_layers(label, rows, objective if pi == len(pages) - 1 else None)))
-    # sound lands as each line starts to appear
-    reveals = [pi * PAGE + START + li * STEP for pi, (_, L) in enumerate(built) for li in range(len(L))]
+        obj = objective if pi == len(pages) - 1 else None
+        if dense:
+            L = page_layers_dense(label, rows, obj); dur = page_seconds(rows, obj)
+            step = min(STEP, max(0.45, dur * 0.22 / max(1, len(L))))
+        else:
+            L = page_layers(label, rows, obj); dur = PAGE; step = STEP
+        built.append((base_frame(pname), L, dur, step))
+    total = sum(b[2] for b in built); tmp = out_path[:-4] + '.tmp.mp4'
+    starts, t0 = [], 0.0
+    for b in built: starts.append(t0); t0 += b[2]
+    reveals = [starts[pi] + START + li * b[3] for pi, b in enumerate(built) for li in range(len(b[1]))]
     wav = M.make_audio(M.THEMES[style], total, reveals, zlib.crc32(name.encode()))
     cmd = ['ffmpeg', '-loglevel', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f'{W}x{H}', '-r', str(FPS), '-i', '-',
            '-i', wav, '-map', '0:v', '-map', '1:a', '-c:a', 'aac', '-b:a', '160k',
            '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20', '-pix_fmt', 'yuv420p', '-movflags', '+faststart', '-t', str(total), tmp]
     p = subprocess.Popen(cmd, stdin=subprocess.PIPE)
     black = Image.new('RGBA', (W, H), (0, 0, 0, 255))
-    for pi, (base, layers) in enumerate(built):
-        for fi in range(int(PAGE * FPS)):
+    for pi, (base, layers, dur, step) in enumerate(built):
+        for fi in range(int(round(dur * FPS))):
             t = fi / FPS
             fr = base.copy()
             for li, (lay, pos) in enumerate(layers):
-                a = (t - (START + li * STEP)) / FADE
+                a = (t - (START + li * step)) / FADE
                 if a <= 0: break
                 a = min(a, 1.0)
                 fr.alpha_composite(_fade(lay, a), (pos[0], int(pos[1] + (1 - a) * 14)))
-            if t > PAGE - 0.4 and pi < len(built) - 1:
-                fr = Image.blend(fr, black, (t - (PAGE - 0.4)) / 0.4 * 0.6)
+            if t > dur - 0.4 and pi < len(built) - 1:
+                fr = Image.blend(fr, black, (t - (dur - 0.4)) / 0.4 * 0.6)
             if t < 0.3 and pi > 0:
                 fr = Image.blend(fr, black, (1 - t / 0.3) * 0.6)
             p.stdin.write(fr.convert('RGB').tobytes())
